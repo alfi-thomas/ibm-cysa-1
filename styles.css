@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Labrada:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --blue1: #1f70c1;
+    --blue2: #f5f5f5;
+    --blue3: #fdfdfd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header */
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    top: 0;
+    height: 80px;
+    z-index: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 40px;
+    justify-content: space-between;
+    background-color: var(--blue2);
+    font-weight: 400;
+}
+
+.logo {
+    padding: 5px;
+    padding-top: 7px;
+    margin-left: 30px;
+    width: 150px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-links a {
+    display: flex;
+    text-decoration: none;
+    color: var(--blue1);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* End of Header */
+
+/* Badge */
+#badge {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 600;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 120px;
+}
+
+#badge-image {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    will-change: transform;
+}
+
+#badge-image:hover {
+    transition: transform 0.3s 0.1s ease-in-out, filter 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* End of Badge */
+
+/* Certificate */
+#certificate {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    background-color: var(--blue3);
+}
+
+#certificate-image {
+    position: relative;
+    padding-top: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+/* End of Certificate */
+
+/* Footer */
+footer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 25px;
+    padding-left: 25px;
+    justify-content: flex-end;
+    background-color: var(--blue2);
+}
+
+.footer-image {
+    margin-top: 11px;
+    width: 40px;
+}
+/* End of Footer */
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    p {
+        top: 180px;
+    }
+    #badge-image {
+        top: 58%;
+        width: 40%;
+    }
+    #certificate-image {
+        padding-top: 80px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        margin-left: 20px;
+        width: 140px;
+    }
+    .navbar-links a {
+        font-size: 0;
+    }
+    p {
+        top: 200px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+    }
+    #badge-image {
+        top: 58%;
+        width: 50%;
+    }
+    #certificate {
+        height: 500px;
+    }
+    #certificate-image {
+        top: 210px;
+        width: 82%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo{
+        margin-left: 15px;
+        width: 130px;
+    }
+    .navbar-links a {
+        font-size: 0;
+    }
+    p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 230px;
+        font-size: 20px;
+    }
+    #badge-image {
+        top: 58%;
+        width: 55%;
+    }
+    #certificate {
+        height: 400px;
+    }
+    #certificate-image {
+        top: 160px;
+        width: 90%;
+    }
+}
