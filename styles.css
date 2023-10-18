@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=PT+Sans&family=Roboto+Condensed:wght@300&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --blue1: #1f70c1;
+    --blue2: #f5f5f5;
+    --blue3: #fdfdfd;
+    --grey1: #595d69;
+    --grey2: #353535;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header */
+.navbar {
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 40px 0 40px;
+    justify-content: space-between;
+    background-color: var(--blue2);
+    font-weight: 400;
+}
+
+.logo {
+    padding: 5px;
+    padding-top: 8px;
+    width: 150px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-links a {
+    display: flex;
+    text-decoration: none;
+    color: var(--blue1);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* End of Header */
+
+#title {
+    position: relative;
+    margin-top: 140px;
+    margin-bottom: 60px;
+    width: 90%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    position: relative;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Badge */
+#badge {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#badge-image {
+    max-width: 300px;
+    height: auto;
+    margin-right: 40px;
+}
+
+#badge-info {
+    flex: 1;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+    line-height: 1.7rem;
+    color: var(--grey2);
+    margin-left: 40px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey1);
+}
+/* End of Badge */
+
+/* Certificate */
+#certificate {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: -8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#certificate-image {
+    max-width: 600px;
+    height: auto;
+    margin-left: 40px;
+}
+
+#certificate-info {
+    flex: 1;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+    margin-right: 40px;
+    line-height: 1.7rem;
+    color: var(--grey2);
+    text-align: justify;
+}
+/* End of Certificate */
+
+/* Footer */
+footer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 25px;
+    padding-left: 25px;
+    justify-content: flex-end;
+    background-color: var(--blue2);
+}
+
+.footer-image {
+    width: 50px;
+    margin: 0 auto;
+    align-self: center;
+    padding: 5px 0;
+}
+/* End of Footer */
