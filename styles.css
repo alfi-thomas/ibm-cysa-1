@@ -40,7 +40,7 @@ body {
 
 .logo {
     padding: 5px;
-    padding-top: 7px;
+    padding-top: 8px;
     margin-left: 30px;
     width: 150px;
 }
@@ -81,7 +81,7 @@ body {
     margin: auto;
 }
 
-p {
+#intro {
     font-size: 25px;
     font-weight: 610;
     width: 100%;
@@ -98,7 +98,7 @@ p {
     left: 50%;
     top: 23.1rem;
     transform: translate(-50%, -50%);
-    width: 25%;
+    width: 350px;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     will-change: transform;
 }
@@ -123,7 +123,7 @@ p {
     left: 50%;
     top: 22.5rem;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 700px;
 }
 /* End of Certificate */
 
@@ -150,3 +150,179 @@ footer {
 /* End of Footer */
 
 /* Responsive */
+@media only screen and (max-width: 1024px) {
+    #intro {
+        font-size: 28px;
+    }
+    #badge-image {
+        top: 23.3rem;
+    }
+    #certificate-image {
+        top: 23rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 25px;
+        top: -155px;
+    }
+    #badge {
+        height: 600px;
+    }
+    #badge-image {
+        top: 24.5rem;
+    }
+    #certificate {
+        height: 600px;
+    }
+    #certificate-image {
+        top: 19rem;
+        width: 600px;
+    }
+    footer {
+        height: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .footer-image {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 25px;
+        top: -170px;
+    }
+    #badge {
+        height: 600px;
+    }
+    #badge-image {
+        top: 24rem;
+    }
+    #certificate {
+        height: 460px;
+    }
+    #certificate-image {
+        top: 14.5rem;
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 20px;
+        top: -150px;
+    }
+    #badge {
+        height: 550px;
+    }
+    #badge-image {
+        top: 21.2rem;
+        width: 320px;
+    }
+    #certificate {
+        height: 460px;
+    }
+    #certificate-image {
+        top: 14.5rem;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 17px;
+        top: -130px;
+    }
+    #badge {
+        height: 500px;
+    }
+    #badge-image {
+        top: 19.8rem;
+        width: 280px;
+    }
+    #certificate {
+        height: 360px;
+    }
+    #certificate-image {
+        top: 11.3rem;
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 65px;
+    }
+    .logo {
+        padding-top: 9px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 15px;
+        top: -80px;
+    }
+    #badge {
+        height: 380px;
+    }
+    #badge-image {
+        top: 15.5rem;
+        width: 200px;
+    }
+    #certificate {
+        height: 300px;
+    }
+    #certificate-image {
+        top: 9.4rem;
+        width: 310px;
+    }
+}
