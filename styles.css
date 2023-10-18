@@ -22,13 +22,13 @@ body {
 
 /* Header */
 .navbar {
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    top: 0;
     position: fixed;
     overflow: hidden;
     display: flex;
-    width: 100%;
-    top: 0;
-    height: 80px;
-    z-index: 1;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
@@ -67,29 +67,36 @@ body {
 
 /* Badge */
 #badge {
-    height: 100vh;
+    height: 600px;
     width: 100%;
     position: relative;
     background-color: #ffffff;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#badge-container {
+    margin: auto;
 }
 
 p {
     font-size: 25px;
-    font-weight: 600;
-    width: 80%;
+    font-weight: 610;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
-    top: 120px;
+    top: -164px;
 }
 
 #badge-image {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 23.1rem;
     transform: translate(-50%, -50%);
     width: 25%;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
@@ -100,12 +107,11 @@ p {
     transition: transform 0.3s 0.1s ease-in-out, filter 0.3s ease-in-out;
     transform: translate(-50%, -50%) scale(1.05);
 }
-
 /* End of Badge */
 
 /* Certificate */
 #certificate {
-    height: 100vh;
+    height: 700px;
     width: 100%;
     position: relative;
     overflow-y: hidden;
@@ -114,9 +120,8 @@ p {
 
 #certificate-image {
     position: relative;
-    padding-top: 80px;
     left: 50%;
-    top: 50%;
+    top: 22.5rem;
     transform: translate(-50%, -50%);
     width: 50%;
 }
@@ -145,72 +150,3 @@ footer {
 /* End of Footer */
 
 /* Responsive */
-@media only screen and (max-width: 1024px) {
-    p {
-        top: 180px;
-    }
-    #badge-image {
-        top: 58%;
-        width: 40%;
-    }
-    #certificate-image {
-        padding-top: 80px;
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .logo{
-        margin-left: 20px;
-        width: 140px;
-    }
-    .navbar-links a {
-        font-size: 0;
-    }
-    p {
-        top: 200px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 25px;
-    }
-    #badge-image {
-        top: 58%;
-        width: 50%;
-    }
-    #certificate {
-        height: 500px;
-    }
-    #certificate-image {
-        top: 210px;
-        width: 82%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .logo{
-        margin-left: 15px;
-        width: 130px;
-    }
-    .navbar-links a {
-        font-size: 0;
-    }
-    p {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        top: 230px;
-        font-size: 20px;
-    }
-    #badge-image {
-        top: 58%;
-        width: 55%;
-    }
-    #certificate {
-        height: 400px;
-    }
-    #certificate-image {
-        top: 160px;
-        width: 90%;
-    }
-}
