@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Labrada:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --blue1: #1f70c1;
+    --blue2: #f5f5f5;
+    --blue3: #fdfdfd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header */
+.navbar {
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 40px;
+    justify-content: space-between;
+    background-color: var(--blue2);
+    font-weight: 400;
+}
+
+.logo {
+    padding: 5px;
+    padding-top: 8px;
+    margin-left: 30px;
+    width: 150px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-links a {
+    display: flex;
+    text-decoration: none;
+    color: var(--blue1);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* End of Header */
+
+/* Badge */
+#badge {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#badge-container {
+    margin: auto;
+}
+
+#intro {
+    font-size: 25px;
+    font-weight: 610;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: -164px;
+}
+
+#badge-image {
+    position: absolute;
+    left: 50%;
+    top: 23.1rem;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    will-change: transform;
+}
+
+#badge-image:hover {
+    transition: transform 0.3s 0.1s ease-in-out, filter 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+/* End of Badge */
+
+/* Certificate */
+#certificate {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    background-color: var(--blue3);
+}
+
+#certificate-image {
+    position: relative;
+    left: 50%;
+    top: 22.5rem;
+    transform: translate(-50%, -50%);
+    width: 700px;
+}
+/* End of Certificate */
+
+/* Footer */
+footer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 25px;
+    padding-left: 25px;
+    justify-content: flex-end;
+    background-color: var(--blue2);
+}
+
+.footer-image {
+    margin-top: 11px;
+    width: 40px;
+}
+/* End of Footer */
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    #intro {
+        font-size: 28px;
+    }
+    #badge-image {
+        top: 23.3rem;
+    }
+    #certificate-image {
+        top: 23rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 25px;
+        top: -155px;
+    }
+    #badge {
+        height: 600px;
+    }
+    #badge-image {
+        top: 24.5rem;
+    }
+    #certificate {
+        height: 600px;
+    }
+    #certificate-image {
+        top: 19rem;
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 25px;
+        top: -170px;
+    }
+    #badge {
+        height: 600px;
+    }
+    #badge-image {
+        top: 24rem;
+    }
+    #certificate {
+        height: 460px;
+    }
+    #certificate-image {
+        top: 14.5rem;
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 20px;
+        top: -150px;
+    }
+    #badge {
+        height: 550px;
+    }
+    #badge-image {
+        top: 21.2rem;
+        width: 320px;
+    }
+    #certificate {
+        height: 460px;
+    }
+    #certificate-image {
+        top: 14.5rem;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 17px;
+        top: -130px;
+    }
+    #badge {
+        height: 500px;
+    }
+    #badge-image {
+        top: 19.8rem;
+        width: 280px;
+    }
+    #certificate {
+        height: 360px;
+    }
+    #certificate-image {
+        top: 11.3rem;
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-links a {
+        font-size: 0;
+    }
+    .navbar {
+        height: 65px;
+    }
+    .logo {
+        padding-top: 9px;
+        margin-left: 10px;
+        width: 120px;
+    }
+    #intro {
+        font-size: 15px;
+        top: -80px;
+    }
+    #badge {
+        height: 380px;
+    }
+    #badge-image {
+        top: 15.5rem;
+        width: 200px;
+    }
+    #certificate {
+        height: 300px;
+    }
+    #certificate-image {
+        top: 9.4rem;
+        width: 310px;
+    }
+}
