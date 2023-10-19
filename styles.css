@@ -189,6 +189,7 @@ footer {
         text-align: center;
         width: 99%;
         padding-bottom: 0;
+        margin-bottom: 50px;
     }
     #badge-image {
         margin: 0;
@@ -203,17 +204,16 @@ footer {
     #certificate {
         padding-top: 0;
         padding-bottom: 0;
+        margin-top: 50px;
         flex-direction: column-reverse;
         text-align: center;
         width: 99%;
         margin-bottom: 40px;
     }
-
     #certificate-image {
         margin: 0;
         margin-bottom: 20px;
     }
-
     #certificate-info {
         margin: 0;
         font-size: 15px;
@@ -222,10 +222,18 @@ footer {
     footer {
         height: 58px;
     }
-    
     .footer-image {
         width: 45px;
         margin: 5px 0;
         padding: 2px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 110px;
+    }
+    h1 {
+        font-size: 22px;
     }
 }
