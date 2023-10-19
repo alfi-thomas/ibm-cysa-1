@@ -35,7 +35,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-    padding: 0 20px;
+    padding: 5px 25px;
     justify-content: space-between;
     background-color: var(--blue2);
     font-weight: 400;
@@ -167,34 +167,65 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+    .navbar {
+        height: 60px;
+        padding: 3px;
+    }
+    .logo {
+        width: 120px;
+    }
     .navbar-links {
         display: none;
+    }
+    #title {
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 23px;
     }
     #badge {
         flex-direction: column;
         text-align: center;
-        width: 98%;
+        width: 99%;
+        padding-bottom: 0;
     }
-
     #badge-image {
         margin: 0;
+        width: 250px;
+        margin-bottom: 20px;
     }
-
     #badge-info {
         margin: 0;
+        font-size: 15px;
+        line-height: 1.3rem;
     }
-
     #certificate {
+        padding-top: 0;
+        padding-bottom: 0;
         flex-direction: column-reverse;
         text-align: center;
-        width: 98%;
+        width: 99%;
+        margin-bottom: 40px;
     }
 
     #certificate-image {
         margin: 0;
+        margin-bottom: 20px;
     }
 
     #certificate-info {
         margin: 0;
+        font-size: 15px;
+        line-height: 1.3rem;
+    }
+    footer {
+        height: 58px;
+    }
+    
+    .footer-image {
+        width: 45px;
+        margin: 5px 0;
+        padding: 2px 0;
     }
 }
